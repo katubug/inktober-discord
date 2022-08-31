@@ -1,0 +1,27 @@
+{
+  "name": "discord",
+  "version": "1.0.0",
+  "description": "## To deploy with Netlify",
+  "main": "index.js",
+  "scripts": {
+    "serve": "netlify-lambda serve src",
+    "build": "netlify-lambda build src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doingandlearning/inktober-discord-call.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/doingandlearning/inktober-discord-call/issues"
+  },
+  "homepage": "https://github.com/doingandlearning/inktober-discord-call#readme",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "dotenv": "^8.2.0",
+    "netlify-lambda": "^2.0.1"
+  }
+}
