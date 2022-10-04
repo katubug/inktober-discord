@@ -8,50 +8,49 @@ const openings = [
   "Well, hello there!",
   "Greetings, frens!",
   "Pens at the ready!",
-  "Hope you're ready for some inking!",
-  "Beep! Boop! Time to ink!",
+  "ART TIME!",
 ];
 
 const topics = {
-  1: "spooky self-portrait | gargoyle",
-  2: "glampire | scurry",
-  3: "dragon wagon | bat",
-  4: "scallop",
-  5: "flame",
-  6: "bouquet",
-  7: "trip",
-  8: "match",
-  9: "nest",
-  10: "crabby",
-  11: "eagle",
-  12: "forget",
-  13: "kind",
-  14: "empty",
-  15: "armadillo",
-  16: "fowl",
-  17: "salty",
-  18: "scrape",
-  19: "ponytail",
-  20: "bluff",
-  21: "bad dog",
-  22: "heist",
-  23: "booger",
-  24: "fairy",
-  25: "tempting",
-  26: "ego",
-  27: "snack",
-  28: "camping",
-  29: "uh-oh",
-  30: "gear",
-  31: "farm",
+  1: "ferret archer",
+  2: "guinea pig barbarian",
+  3: "dormouse bard",
+  4: "finch fletcher",
+  5: "llama shopkeep",
+  6: "raven wizard",
+  7: "stoat farmer NPC",
+  8: "bat artificer",
+  9: "long-eared jerboa: thief rogue",
+  10: "anteater paladin",
+  11: "tapir cleric",
+  12: "shrew apothecary",
+  13: "chinchilla baker",
+  14: "yak druid",
+  15: "basilisk sword-dancer",
+  16: "otter historian",
+  17: "bullfrog fisherman",
+  18: "addax sorcerer",
+  19: "bunny fighter",
+  20: "lamb priest",
+  21: "opossum ranger",
+  22: "newt baker",
+  23: "badger blacksmith",
+  24: "capybara war general",
+  25: "canary miner",
+  26: "mole monk",
+  27: "mink florist",
+  28: "argali warlock",
+  29: "chicken scout",
+  30: "squirrel alchemist",
+  31: "puppy paladin"
 };
 
 const finishings = [
-  "Hope you'll share your creations here.",
-  "Draw on!",
-  "The journey is as important as the destination.",
-  "There is no competition - show us what you made.",
-  "1... 2... 3... Draw!",
+  "Hope you'll share your creations here. And check the pins for other prompt lists!",
+  "Draw on! And check the pins for other prompt lists!",
+  "The journey is as important as the destination. And check the pins for other prompt lists!",
+  "There is no competition - show us what you made. And check the pins for other prompt lists!",
+  "1... 2... 3... Draw! And check the pins for other prompt lists!",
 ];
 
 function constructMessage() {
@@ -59,7 +58,7 @@ function constructMessage() {
   const date = getDate();
   const theme = topics[today.getDate()];
   const closing = selectRandomFrom(finishings);
-  return `${opening} It is the ${date} of Inktober and today's theme is **${theme}**. ${closing}`;
+  return `${opening} It is the ${date} of Drawtober and today's theme is **${theme}**. ${closing}`;
 }
 
 function selectRandomFrom(selection) {
